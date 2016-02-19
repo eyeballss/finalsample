@@ -2,6 +2,9 @@
 
 #test featureDtest
         fail_unless(feature_d(1,2)==1, "trivial case");
+	fail_unless(feature_d(9,4)==4, "trivial case");
+	fail_unless(feature_d(0,0)==0, "trivial case");
+
 
 #main-pre
 	srunner_set_xml(sr, "report_featureD.xml");
